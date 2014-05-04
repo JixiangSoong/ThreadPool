@@ -11,6 +11,7 @@
 
 class Mutex
 {
+	friend class Condition;
 	public:
 		Mutex();
 		~Mutex();
