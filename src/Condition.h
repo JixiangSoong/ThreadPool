@@ -8,13 +8,14 @@
 #ifndef CONDITION_H_
 #define CONDITION_H_
 #include <pthread.h>
+#include "noncopyable.h"
 
 class Mutex;
 
-class Condition
+class Condition : public noncopyable
 {
 	public:
-		Condition();
+		Condition(Mutex *p_mutex);
 		~Condition();
 		void wait();
 		void notify();

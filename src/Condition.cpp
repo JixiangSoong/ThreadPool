@@ -8,7 +8,7 @@
 #include "Condition.h"
 #include "Mutex.h"
 
-Condition::Condition()
+Condition::Condition(Mutex *p_mutex) : _p_mutex(p_mutex)
 {
 	pthread_cond_init(&_cond, NULL);
 }

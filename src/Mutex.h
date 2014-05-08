@@ -8,8 +8,9 @@
 #ifndef MUTEX_H_
 #define MUTEX_H_
 #include <pthread.h>
+#include "noncopyable.h"
 
-class Mutex
+class Mutex : public noncopyable
 {
 	friend class Condition;
 	public:

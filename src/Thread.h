@@ -8,14 +8,16 @@
 #ifndef THREAD_H_
 #define THREAD_H_
 #include <pthread.h>
+#include "copyable.h"
 
-class Thread
+class Thread : public copyable
 {
 	public:
 		Thread();
 		virtual ~Thread();
 		static void* thread_func(void *arg);
 		virtual void run() = 0;
+		void start();
 		void join();
 	private:
 		pthread_t _tid;
