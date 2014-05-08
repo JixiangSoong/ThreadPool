@@ -5,7 +5,7 @@
   > Created Time: 2014年05月04日 星期日 15时53分48秒
  ************************************************************************/
 
-#include "Thread.h"
+#include "./../include/Thread.h"
 
 Thread::Thread() : _tid(){
 }

@@ -5,7 +5,7 @@
   > Created Time: 2014年05月06日 星期二 15时58分02秒
  ************************************************************************/
 
-#include "Task.h"
+#include "./../include/Task.h"
 #include <iostream>
 
 Task::Task(const sockaddr_in &client_addr, const std::string &word) : _word(word), _addr(client_addr){

@@ -5,8 +5,8 @@
   > Created Time: 2014年05月04日 星期日 15时47分24秒
  ************************************************************************/
 
-#include "ThreadPool.h"
-#include "Task.h"
+#include "./../include/ThreadPool.h"
+#include "./../include/Task.h"
 
 ThreadPool::ThreadPool(std::vector<WorkThread>::size_type thread_num) :
 	_is_started(false), _mutex(), _cond(&_mutex), _thread_num(thread_num), _thread_pool(_thread_num, WorkThread(this)), _task_queue(){

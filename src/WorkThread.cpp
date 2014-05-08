@@ -5,9 +5,9 @@
   > Created Time: 2014年05月05日 星期一 09时52分13秒
  ************************************************************************/
 
-#include "WorkThread.h"
-#include "ThreadPool.h"
-#include "Task.h"
+#include "./../include/WorkThread.h"
+#include "./../include/ThreadPool.h"
+#include "./../include/Task.h"
 
 WorkThread::WorkThread(ThreadPool * p_thread_pool) : _p_thread_pool(p_thread_pool){
 

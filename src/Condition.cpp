@@ -5,8 +5,8 @@
   > Created Time: 2014年05月04日 星期日 15时25分30秒
  ************************************************************************/
 
-#include "Condition.h"
-#include "Mutex.h"
+#include "./../include/Condition.h"
+#include "./../include/Mutex.h"
 
 Condition::Condition(Mutex *p_mutex) : _p_mutex(p_mutex)
 {

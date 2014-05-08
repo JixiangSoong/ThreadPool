@@ -5,8 +5,8 @@
 	> Created Time: 2014年05月06日 星期二 21时51分01秒
  ************************************************************************/
 
-#include "ThreadPool.h"
-#include "UDPserver.h"
+#include "./../include/ThreadPool.h"
+#include "./../include/UDPserver.h"
 #include <iostream>
 
 int main(int argc, char * argv[])
